@@ -19,13 +19,16 @@
 			</div>
 		  </div>
 
-		<nav class="navbar">
-		  <ul>
-			<li><a href="#featured">Latest Contributions</a></li>
-			<li><a href="#projects">Personal Projects</a></li>
-			<li><a href="#contact">Contact</a></li>
-		  </ul>
-		</nav>
+		  <nav class="navbar">
+			<div class="menu-toggle" id="menu-toggle">
+			  <i class="fas fa-bars"></i>
+			</div>
+			<ul>
+			  <li><a href="#featured">Latest Contributions</a></li>
+			  <li><a href="#projects">Personal Projects</a></li>
+			  <li><a href="#contact">Contact</a></li>
+			</ul>
+		  </nav>		  
 	  </header>
 
 	<section class="hero container">
@@ -122,6 +125,13 @@
 	<div class="bar bar-one"></div>
 	<div class="bar bar-two"></div>
   </div>
+  <script>
+	const toggle = document.getElementById('menu-toggle');
+	const navList = document.querySelector('.navbar ul');
   
+	toggle.addEventListener('click', () => {
+	  navList.classList.toggle('active');
+	});
+  </script>
 </body>
 </html>
