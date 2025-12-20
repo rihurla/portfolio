@@ -163,8 +163,10 @@
 	gap: 20px;
   }
   
-  .work img {
+  .work > img {
 	width: 400px;
+	height: 300px;
+	object-fit: contain;
 	border-radius: 6px;
   }
   
@@ -179,6 +181,13 @@
   
   .work-text p {
 	margin-top: 32px;
+  }
+
+  .work-text .appstore-badge {
+	width: 150px;
+	height: auto;
+	margin-top: 16px;
+	display: block;
   }
 
   .year {
