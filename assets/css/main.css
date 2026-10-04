@@ -101,7 +101,7 @@
   }
   
   .hero-text h1 {
-	font-size: 42px;
+	font-size: 32px;
 	margin-bottom: 36px;
   }
   
@@ -109,8 +109,16 @@
 	font-weight: bold;
   }
   
-  .hero-text p {
+  .hero-summary {
 	margin: 40px 0;
+  }
+
+  .hero-summary p {
+	margin: 0;
+  }
+
+  .hero-summary p + p {
+	margin-top: 1em;
   }
 
   .btn {
@@ -181,6 +189,32 @@
   
   .work-text p {
 	margin-top: 32px;
+  }
+
+  .work-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	min-height: 44px;
+	margin-top: 12px;
+	color: #333;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+	transition: color 0.3s ease;
+  }
+
+  .work-link i {
+	font-size: 20px;
+  }
+
+  .work-link:hover {
+	color: #ff6464;
+  }
+
+  .work-link:focus-visible {
+	outline: 2px solid #ff6464;
+	outline-offset: 4px;
   }
 
   .work-text .appstore-badge {
@@ -302,7 +336,7 @@
 	}
   
 	.hero-text h1 {
-	  font-size: 32px;
+	  font-size: 30px;
 	}
   
 	.hero-image img {
